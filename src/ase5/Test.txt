@@ -1,0 +1,88 @@
+C:\Users\poupou\Desktop\Test
+
+
+
+
+
+                    File FilePath = new File(dossier + "\\" + NomDuDossier[DossierIndex]);
+                    NomDuFichier = FilePath.list();
+                    Server[] servers = new Server[NomDuFichier.length];
+                    for(int j=0;j<servers.length;j++){
+                        servers[j]=new Server(random.nextInt(9000));
+                        System.out.println(servers[j].getPort());
+                    }
+
+
+
+
+
+String jsonString = new Gson().toJson(myStrings);
+JsonElement element = Gson.fromJson(jsonString, JsonElement.class);
+Gson gson = new GsonBuilder().create();
+Object jsonObject = gson.fromJson(element, Object.class);
+
+
+
+
+
+
+
+File file = new File("myFolder/myFile.txt");
+List<String> lines = Files.readAllLines(file.toPath());
+String[] newArray1 = lines.subList(0, lines.size()/2).toArray(new String[lines.size()/2]);
+String[] newArray2 = lines.subList(lines.size()/2, lines.size()).toArray(new String[lines.size()/2]);
+
+
+
+
+PrintWriter p = new PrintWriter (bsSocket[mod].getOutputStream());
+
+
+
+
+
+
+                            BufferedReader r = new BufferedReader(new InputStreamReader(bsSocket[mod].getInputStream()));
+                            String reponse = r.readLine();
+                            System.out.println(reponse);
+
+
+
+
+
+
+ANSI_BLUE+"Server : " + port +ANSI_RESET + " : received : "+ json
+
+
+
+
+
+                    for(int j=0;j<Jsonarray.length;j++){
+                            int mod = j%bsSocket.length;
+                            oos = new ObjectOutputStream (bsSocket[mod].getOutputStream());
+                            oos.writeObject(Jsonarray[j]);
+                            System.out.println("----->" + Jsonarray[j]);  
+                             
+                    }
+
+
+
+
+
+
+
+
+
+
+            String content = h.getContent();
+            String mot = h.getMot();
+            
+            Pattern pattern = Pattern.compile("\\b" + mot + "\\b");
+            Matcher matcher = pattern.matcher(content);
+            while (matcher.find()) {
+                sem.acquire();
+                cmpt++;
+                sem.release();
+              }
+            System.out.println("Server : " + port + "--->"+content+"------------------->"+ cmpt);
+            
