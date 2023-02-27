@@ -33,4 +33,4 @@ Folder/
 
 ## Credits
 
-This program was developed by [Your Name].
+This program was developed by [Said Bouziani].
